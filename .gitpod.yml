@@ -6,11 +6,22 @@
 
 # start data extraction
 tasks:
-  - init: python3 '1. data-extract.py'
-  # command: python3 '1. data-extract.py'
-  # openMode: split-right
-  # label: 'data-extract'
-  # initTerminal: true
-  # openIn: editor
-  # type: python
-  # workspace: 'data-extract'
+# install requirements
+  - init: pip install -r requirements.txt
+    command: pip install -r requirements.txt
+    openMode: split-right
+    label: 'install-requirements'
+    initTerminal: true
+    openIn: editor
+    type: shell
+    workspace: 'install-requirements'
+
+# run data extraction
+  - init: python3 '1. data-extraction.py'
+    command: python3 '1. data-extraction.py'
+    openMode: split-right
+    label: 'data-extraction'
+    initTerminal: true
+    openIn: editor
+    type: shell
+    workspace: 'data-extraction'
