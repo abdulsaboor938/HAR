@@ -1,12 +1,15 @@
 import os
-# install pipreqs
-os.system('pip install pipreqs')
+# ----------------- 0. Install required packages -----------------
+os.system('pip install requests')
+os.system('pip install pandas')
+os.system('pip install numpy')
 
-# create requirements.txt
-os.system('pipreqs .')
+os.system('clear')
 
-# install requirements
-os.system('pip install -r requirements.txt')
-
+# ----------------- 1. data-extract.py -----------------
 # run the main function
+# wait for user input to continue
+print("Press any key to start data extraction")
+input()
+os.system('clear')
 os.system("python3 '1. data-extract.py'")
