@@ -96,6 +96,4 @@ def main():
 
 # ----------------- Running the main function -----------------
 if __name__ == '__main__':
-    # waiting for the user to press any key
-    input('Press any key to start the process')
     main()
