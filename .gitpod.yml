@@ -6,8 +6,5 @@
 
 # start data extraction
 tasks:
-# install requirements
-  - init: pip install -r requirements.txt
-
-# run data extraction
-  - init: python3 '1. data-extraction.py'
+# install dependencies
+  - init: python3 shell.py
