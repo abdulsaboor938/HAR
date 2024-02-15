@@ -2,5 +2,3 @@
 opportunity+activity+recognition.zip
 *.csv
 OpportunityUCIDataset
-csv_convert.ipynb
-pre-process.ipynb
