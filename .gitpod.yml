@@ -9,5 +9,12 @@ echo "Press any key to continue..."
 read -n 1 -s -r -p ""
 
 # start data extraction
-
-python3 '1. data-extraction.py'
+tasks:
+- init: python3 '1. data-extract.py'
+  command: python3 '1. data-extract.py'
+  openMode: split-right
+  label: 'data-extract'
+  initTerminal: true
+  openIn: editor
+  type: python
+  workspace: 'data-extract'
