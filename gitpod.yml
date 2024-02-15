@@ -1,0 +1,9 @@
+# This is the file that will automatically run and start the dependencies for the project
+
+# prompt the user to press any key to continue
+echo "Press any key to continue..."
+read -n 1 -s -r -p ""
+
+# start data extraction
+
+python3 '1. data-extraction.py'
