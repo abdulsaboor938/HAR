@@ -60,7 +60,6 @@ def main():
     two = 0
     three = 0
     four = 0
-    five = 0
 
     for file in file_names:
         # process the file
